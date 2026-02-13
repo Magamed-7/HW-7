@@ -189,4 +189,9 @@ button:hover {
     .sec1-right img {
         width: 120px;
     }
+
+    // Second section
+    .sec2 {
+        flex-direction: column-reverse;
+    }
 }
