@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+}
+
+// Const
+$colors: red, blue, white, black;
+$borders: solid, dotted, dashed, double, none;
+$displays: flex, grid, inline, block;
+$aligns: start, center, justify, end, stretch, space-around, space-between, space-evenly;
+
+
+
+
+
+@for $i from 1 through 100 {
+
+    // Margin
+    .m-#{$i} {
+        margin: $i * 5px;
+    }
+    .mt-#{$i} {
+        margin-top: $i * 5px;
+    }
+    .mb-#{$i} {
+        margin-bottom: $i * 5px;
+    }
+    .ml-#{$i} {
+        margin-left: $i * 5px;
+    }
+    .mr-#{$i} {
+        margin-right: $i * 5px;
+    }
+    .mx-#{$i} {
+        margin-left: $i * 5px;
+        margin-right: $i * 5px;
+    }
+    .my-#{$i} {
+        margin-top: $i * 5px;
+        margin-bottom: $i * 5px;
+    }
+    
+    // Padding
+    .p-#{$i} {
+        padding: $i * 5px;
+    }
+    .pt-#{$i} {
+        padding-top: $i * 5px;
+    }
+    .pb-#{$i} {
+        padding-bottom: $i * 5px;
+    }
+    .pl-#{$i} {
+        padding-left: $i * 5px;
+    }
+    .pr-#{$i} {
+        padding-right: $i * 5px;
+    }
+    .px-#{$i} {
+        padding-right: $i * 5px;
+        padding-left: $i * 5px;
+    }
+    .py-#{$i} {
+        padding-top: $i * 5px;
+        padding-bottom: $i * 5px;
+    }
+
+    // Font
+    .font-#{$i} {
+        font-weight: $i * 10;
+    }
+    .text-#{$i} {
+        font-size: #{$i}px;
+    }
+
+    // Width and height
+    .w-#{$i} {
+        width: $i * 5px;
+    }
+    .h-#{$i} {
+        height: $i * 5px;
+    }
+
+    // Border
+    .rounded-#{$i} {
+        border-radius: #{$i}px;
+    }
+    .border-#{$i} {
+        border-width: #{$i}px;
+    }
+
+    // Gap 
+    .gap-#{$i} {
+        gap: #{$i}px;
+    }
+}
+
+// Colors
+@each $c in $colors {
+    .color-#{$c} {
+        color: $c;
+    }
+    .bg-#{$c} {
+        background-color: $c;
+    }
+    .bc-#{$c} {
+        border-color: $c;
+    }
+}
+
+// Border style
+@each $b in $borders {
+    .border-#{$b} {
+        border-style: #{$b};
+    }
+}
+
+// Display
+@each $d in $displays {
+    .#{$d} {
+        display: #{$d};
+    }
+}
+
+// Aligns
+@each $a in $aligns {
+    .text-#{$a} {
+        text-align: #{$a};
+    }
+    .justify-#{$a} {
+        justify-content: #{$a};
+    }
+    .items-#{$a} {
+        align-items: #{$a};
+    }
+}
+.max-w-1200 {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    text-decoration: none;
+}
+
+//  Header
+nav a:hover {
+    cursor: pointer;
+    color: rgba(25, 34, 82, 1);
+}
+header button {
+    background-color: rgba(25, 34, 82, 1);
+    cursor: pointer;
+}
