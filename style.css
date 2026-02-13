@@ -8850,6 +8850,18 @@
   border-color: black;
 }
 
+.color-gray {
+  color: gray;
+}
+
+.bg-gray {
+  background-color: gray;
+}
+
+.bc-gray {
+  border-color: gray;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -8898,6 +8910,10 @@
   align-items: start;
 }
 
+.direction-start {
+  flex-direction: start;
+}
+
 .text-center {
   text-align: center;
 }
@@ -8908,6 +8924,10 @@
 
 .items-center {
   align-items: center;
+}
+
+.direction-center {
+  flex-direction: center;
 }
 
 .text-justify {
@@ -8922,6 +8942,10 @@
   align-items: justify;
 }
 
+.direction-justify {
+  flex-direction: justify;
+}
+
 .text-end {
   text-align: end;
 }
@@ -8932,6 +8956,10 @@
 
 .items-end {
   align-items: end;
+}
+
+.direction-end {
+  flex-direction: end;
 }
 
 .text-stretch {
@@ -8946,6 +8974,10 @@
   align-items: stretch;
 }
 
+.direction-stretch {
+  flex-direction: stretch;
+}
+
 .text-space-around {
   text-align: space-around;
 }
@@ -8956,6 +8988,10 @@
 
 .items-space-around {
   align-items: space-around;
+}
+
+.direction-space-around {
+  flex-direction: space-around;
 }
 
 .text-space-between {
@@ -8970,6 +9006,10 @@
   align-items: space-between;
 }
 
+.direction-space-between {
+  flex-direction: space-between;
+}
+
 .text-space-evenly {
   text-align: space-evenly;
 }
@@ -8980,6 +9020,42 @@
 
 .items-space-evenly {
   align-items: space-evenly;
+}
+
+.direction-space-evenly {
+  flex-direction: space-evenly;
+}
+
+.text-column {
+  text-align: column;
+}
+
+.justify-column {
+  justify-content: column;
+}
+
+.items-column {
+  align-items: column;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.text-column-reverse {
+  text-align: column-reverse;
+}
+
+.justify-column-reverse {
+  justify-content: column-reverse;
+}
+
+.items-column-reverse {
+  align-items: column-reverse;
+}
+
+.direction-column-reverse {
+  flex-direction: column-reverse;
 }
 
 .max-w-1200 {
@@ -8997,7 +9073,36 @@ nav a:hover {
   color: rgb(25, 34, 82);
 }
 
-header button {
-  background-color: rgb(25, 34, 82);
+button:hover {
+  opacity: 0.6;
   cursor: pointer;
+}
+
+.block {
+  display: none;
+}
+
+@media (max-width: 510px) {
+  .block {
+    display: block;
+  }
+  .hidden {
+    display: none;
+  }
+  header p {
+    font-size: 50px;
+  }
+  .sec1 {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .sec1-left {
+    width: 90%;
+  }
+  .sec1-right {
+    width: 90%;
+  }
+  .sec1-right img {
+    width: 120px;
+  }
 }/*# sourceMappingURL=style.css.map */

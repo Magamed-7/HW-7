@@ -3,10 +3,10 @@
 }
 
 // Const
-$colors: red, blue, white, black;
+$colors: red, blue, white, black, gray;
 $borders: solid, dotted, dashed, double, none;
 $displays: flex, grid, inline, block;
-$aligns: start, center, justify, end, stretch, space-around, space-between, space-evenly;
+$aligns: start, center, justify, end, stretch, space-around, space-between, space-evenly, column, column-reverse;
 
 
 
@@ -132,6 +132,9 @@ $aligns: start, center, justify, end, stretch, space-around, space-between, spac
     .items-#{$a} {
         align-items: #{$a};
     }
+    .direction-#{$a} {
+        flex-direction:#{$a};
+    }
 }
 .max-w-1200 {
     max-width: 1200px;
@@ -147,7 +150,43 @@ nav a:hover {
     cursor: pointer;
     color: rgba(25, 34, 82, 1);
 }
-header button {
-    background-color: rgba(25, 34, 82, 1);
+button:hover {
+    opacity: 0.6;
     cursor: pointer;
+}
+
+
+
+
+
+.block {
+    display: none;
+}
+@media (max-width:510px) {
+    .block {
+        display: block;
+    }
+    .hidden {
+        display: none;
+    }
+
+    // Header
+    header p {
+        font-size: 50px;
+    }
+
+    // First section
+    .sec1 {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .sec1-left {
+        width: 90%;
+    }
+    .sec1-right {
+        width: 90%;
+    }
+    .sec1-right img {
+        width: 120px;
+    }
 }
