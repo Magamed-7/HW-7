@@ -11450,20 +11450,12 @@
   background-color: red;
 }
 
-.bc-red {
-  border-color: red;
-}
-
 .color-blue {
   color: blue;
 }
 
 .bg-blue {
   background-color: blue;
-}
-
-.bc-blue {
-  border-color: blue;
 }
 
 .color-white {
@@ -11474,20 +11466,12 @@
   background-color: white;
 }
 
-.bc-white {
-  border-color: white;
-}
-
 .color-black {
   color: black;
 }
 
 .bg-black {
   background-color: black;
-}
-
-.bc-black {
-  border-color: black;
 }
 
 .color-gray {
@@ -11498,8 +11482,12 @@
   background-color: gray;
 }
 
-.bc-gray {
-  border-color: gray;
+.color-royalblue {
+  color: royalblue;
+}
+
+.bg-royalblue {
+  background-color: royalblue;
 }
 
 .border-solid {
@@ -11747,5 +11735,19 @@ button:hover {
   }
   .sec2 {
     flex-direction: column-reverse;
+  }
+  .top-four {
+    width: 90%;
+  }
+  .top-four p {
+    width: 90%;
+  }
+  .four-all {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 70px;
+  }
+  .card-four {
+    min-width: 80%;
   }
 }/*# sourceMappingURL=style.css.map */

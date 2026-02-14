@@ -3,7 +3,7 @@
 }
 
 // Const
-$colors: red, blue, white, black, gray;
+$colors: red, blue, white, black, gray, royalblue;
 $borders: solid, dotted, dashed, double, none;
 $displays: flex, grid, inline, block;
 $aligns: start, center, justify, end, stretch, space-around, space-between, space-evenly, column, column-reverse;
@@ -102,9 +102,9 @@ $aligns: start, center, justify, end, stretch, space-around, space-between, spac
     .bg-#{$c} {
         background-color: $c;
     }
-    .bc-#{$c} {
-        border-color: $c;
-    }
+    // .bc-#{$c} {
+    //     border-color: $c;
+    // }
 }
 
 // Border style
@@ -193,5 +193,22 @@ button:hover {
     // Second section
     .sec2 {
         flex-direction: column-reverse;
+    }
+
+    // Fourth section
+    .top-four {
+        width: 90%;
+
+        p {
+            width: 90%;
+        }
+    }
+    .four-all {
+        width: 100%;
+        overflow-x: auto;
+        margin-bottom: 70px;
+    }
+    .card-four {
+        min-width: 80%;
     }
 }
