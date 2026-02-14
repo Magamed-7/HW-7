@@ -3,7 +3,7 @@
 }
 
 // Const
-$colors: red, blue, white, black, gray, royalblue;
+$colors: red, blue, white, black, gray, royalblue, lightyellow, orange;
 $borders: solid, dotted, dashed, double, none;
 $displays: flex, grid, inline, block;
 $aligns: start, center, justify, end, stretch, space-around, space-between, space-evenly, column, column-reverse;
@@ -102,9 +102,9 @@ $aligns: start, center, justify, end, stretch, space-around, space-between, spac
     .bg-#{$c} {
         background-color: $c;
     }
-    // .bc-#{$c} {
-    //     border-color: $c;
-    // }
+    .bc-#{$c} {
+        border-color: $c;
+    }
 }
 
 // Border style
@@ -211,4 +211,21 @@ button:hover {
     .card-four {
         min-width: 80%;
     }
+
+    // Section five
+    .sec5 {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .five-left {
+        width: 90%;
+    }
+    .five-right {
+        width: 90%;
+
+        .five-card {
+            width: 90%;
+        }
+    }
+    
 }
