@@ -239,5 +239,23 @@ button:hover {
         }
 
     }
+
+    // Seventh section
+    .sec7 {
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px;
+
+        .sec7-in {
+            flex-direction: column;
+            align-items: start;
+            gap: 70px;
+        }
+
+        .left-end {
+            justify-content: center;
+            gap: 40px;
+        }
+    }
     
 }
